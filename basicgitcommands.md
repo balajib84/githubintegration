@@ -11,3 +11,4 @@ $git commit -am -- am switch is to say you want to track changes to the modified
 before adding add, the modifed file was in red color stating it wasn't tracked. after adding add or add. it changed to green stating it's being tracked
 $git add. -- lets you track all the files that are in the directory, rather than having to type git -add "eachfilename.md"
 $git config --edit --global - opens the global file using your default editor
+$git log - shows all the commit logs
