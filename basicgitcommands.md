@@ -7,3 +7,4 @@ $git config --global user.name Balaji Baskaran
 $git config --global user.email balaji.b84@gmail.com
 $git add filname.md -- tracks the changes so it can be committed. Adding commit before add will do no commit
 $git commit -m "message" - lets you commit you work. -m can help you add message/comment to your commit
+$git commit -am -- am switch is to say you want to track changes to the modified file as well as to write message/comments to your git commit
