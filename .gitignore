@@ -1,0 +1,20 @@
+#  Local .terraform directories
+terraform/
+.terraform/
+.terraform
+**/.terraform/*
+*.terraform/plugins/windows_amd64/terraform-provider-aws_v2.69.0_x4.exe
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
+
+# .tfplan files
+*.tfplan
+
+# .pem files
+*.pem
+
