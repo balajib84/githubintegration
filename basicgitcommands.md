@@ -12,3 +12,28 @@ before adding add, the modifed file was in red color stating it wasn't tracked. 
 $git add. -- lets you track all the files that are in the directory, rather than having to type git -add "eachfilename.md"
 $git config --edit --global - opens the global file using your default editor
 $git log - shows all the commit logs
+# creating SSH Key
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Balaji/.ssh/id_rsa): balajigithub
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in balajigithub
+Your public key has been saved in balajigithub.pub
+The key fingerprint is:
+SHA256:rzENtiLlVTWWFcjBm5mN1nl9RlVyEMBCEJRqn/no724 Balaji@Balaji
+The key's randomart image is:
++---[RSA 3072]----+
+|       .+=.+***+*|
+|        . .o*. o.|
+|       .  .. O o.|
+|      o  .  B + =|
+|     ...So .   o.|
+|     o o+=       |
+|    . o +oo      |
+|     . ..+E      |
+|       .o=+      |
++----[SHA256]-----+
+# add the pub key to the settings in github website. 
+# use 'ssh -t git@github.com' to authenticate automatically using the ssh key
+# Searching using github. For example Citrix with starts more than 100. Citrix stars:>100. Citrix stars:>100 forks:10...1000
