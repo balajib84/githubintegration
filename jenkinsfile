@@ -19,37 +19,37 @@ try {
 
   // Run terraform plan
   stage('plan') {
-    node {
+    node 
        {
         ansiColor('xterm') {
           sh 'terraform plan -out m3.tfplan'
         }
       }
-    }
+    
   }
 
   if (env.BRANCH_NAME == 'master') {
 
     // Run terraform apply
     stage('apply') {
-      node {
+      node 
         {
           ansiColor('xterm') {
             sh 'terraform apply "m3.tfplan"'
           }
         }
-      }
+      
     }
 
     // Run terraform show
     stage('show') {
-      node {
+      node 
         {
           ansiColor('xterm') {
             sh 'terraform show'
           }
         }
-      }
+      
     }
   }
   currentBuild.result = 'SUCCESS'
