@@ -1,0 +1,23 @@
+stage ('checkout')  {
+    node {
+        cleanws()
+        checkout scm
+    }
+}
+
+stage ('init')  {
+    sh 'terraform init'
+}
+
+stage ('validate')  {
+    sh 'terraform validate'
+}
+
+stage ('plan')  {
+    sh 'terraform plan -out m3.tfplan'
+}
+
+stage ('apply')  {
+    sh 'terraform apply "m3.tfplan"'
+}
+
