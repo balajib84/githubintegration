@@ -11,11 +11,9 @@ try {
   // Run terraform init
   stage('init') {
     node {
-      {
-        ansiColor('xterm') {
+       ansiColor('xterm') {
           sh 'terraform init'
-        }
-      }
+        }  
     }
   }
 
