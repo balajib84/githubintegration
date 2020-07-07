@@ -27,7 +27,19 @@ try {
       }
     
   }
+  
+  // Run terraform apply
 
+stage('apply') {
+    node 
+       {
+        ansiColor('xterm') {
+          bat 'terraform apply "m3.tfplan"'
+        }
+      }
+    
+  }
+  
   if (env.BRANCH_NAME == 'master') {
 
     // Run terraform apply
