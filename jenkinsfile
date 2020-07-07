@@ -12,7 +12,7 @@ try {
   stage('init') {
     node {
        //ansiColor('xterm') {
-          sh 'terraform init'
+          bat 'terraform init'
         //}  
     }
   }
@@ -22,7 +22,7 @@ try {
     node 
        {
         ansiColor('xterm') {
-          sh 'terraform plan -out m3.tfplan'
+          bat 'terraform plan -out m3.tfplan'
         }
       }
     
@@ -35,7 +35,7 @@ try {
       node 
         {
           ansiColor('xterm') {
-            sh 'terraform apply "m3.tfplan"'
+            bat 'terraform apply "m3.tfplan"'
           }
         }
       
@@ -46,7 +46,7 @@ try {
       node 
         {
           ansiColor('xterm') {
-            sh 'terraform show'
+            bat 'terraform show'
           }
         }
       
