@@ -10,10 +10,10 @@ terraform/
 #*.tfstate.*
 
 # .tfvars files
-#*.tfvars
+*.tfvars
 
 # .tfplan files
-#*.tfplan
+*.tfplan
 
 # .pem files
 *.pem
