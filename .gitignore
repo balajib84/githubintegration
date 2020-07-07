@@ -6,14 +6,14 @@ terraform/
 *.terraform/plugins/windows_amd64/terraform-provider-aws_v2.69.0_x4.exe
 
 # .tfstate files
-*.tfstate
-*.tfstate.*
+#*.tfstate
+#*.tfstate.*
 
 # .tfvars files
-*.tfvars
+#*.tfvars
 
 # .tfplan files
-*.tfplan
+#*.tfplan
 
 # .pem files
 *.pem
